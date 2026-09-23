@@ -1,375 +1,70 @@
-<!DOCTYPE html>
-<html>
-<title>My Portfolio</title>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-        src="https://kit.font.awesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <style>
-        .nav{
-            position: -webkit-sticky;
-            position: sticky;
-            top:0;
-            z-index: 2;
-        }
-        html {
-            scroll-behavior: smooth;
-}
-       body{
-        background-color: black;
-
-       }
-       .nav{
-        background-color: rgb(26, 26, 26);
-        z-index: 1;
-       }
-       ul{
-            margin:-10px;
-            padding-left: 100px;
-            padding-right: 100px;
-            overflow: hidden;            
-       }
-       li{
-        list-style-type: none;
-        float:left;
-
-       }
-       a:hover{
-        background-color: rgb(102, 102, 102)
-;
-       }
-       a{
-           display:block;
-           color:white;
-           padding:20px;
-           text-decoration:none;
-           font-size: 25px;
-       }
-      .img1{
-        float:left;
-        max-width:200px;
-        max-height:200px;
-        position: absolute;
-        top:225px;
-        left:300px;
-
-      }
-      h1{   position:relative;
-            left:900px;
-           top:175px;
-            color:white;
-        }
-        .h2{
-            
-            position:relative;
-            left:900px;
-           top:175px;
-            color:white;
-        }
-        .h3{
-            position:relative;
-            left:900px;
-           top:135px;
-            color:white;
-        }
-        .h4{
-            position:relative;
-            left:900px;
-           top:125px;
-            color:white;
-        }
-			.body{
-                position: relative;
-                left:-300px;
-                top:140px;
-            }
-            .data1{
-                position:relative;
-                top:350px;
-                left:20px;
-                font-size: 20px;
-                
-            }
-            .data2{
-                position:relative;
-                left:455px;
-                top:-63px;
-                font-size: 20px;
-                
-            }
-            .data3{
-                position:relative;
-                left:895px;
-                top:-476px;
-                font-size: 20px;
-                
-            }
-            table,td,th{
-                border:2px dashed green;
-                width:400px;
-                border-radius: 10px;
-                padding:10px;
-                text-align: center;
-            }
-            table{
-                border-spacing:10px;
-            }
-            th{
-                color: rgb(83, 158, 243);
-            }
-            td,.a{
-                color:yellow;
-            }
-            
-            
-            .img2{
-                width:500px;
-                height:400px;
-                position:relative;
-            left: 300px;
-            top: -100px;
-
-            }
-            .img3{
-                width:500px;
-                height: 400px;
-                position:relative;
-            left: 100px;
-            top: -100px;
-            float:left;
-            }
-            .body2{
-                position: relative;
-                color: white;
-                top: -375px;
-                left:-300px;
-            }
-            .skill{
-                position: relative;
-                left:-255px;
-                top:-150px;
-
-            }
-            .skillimg{
-                position: relative;
-                top:100px;
-                font-size: 20px;
-                color:white;
-                list-style: disc white;
-                
-
-            }
-            .download{
-                display: block;
-                background-color: green;
-                width:200px;
-                color:white;
-                text-align:center;
-                border-radius: 10px;
-                position:relative;
-                top:125px;
-                left:900px;
-
-            }
-            .contact{
-                position: relative;
-                top:10px;
-                left:-275px;
-            }
-            .cont{
-                position: relative;
-                top:250px;
-                left:300px;
-                
-                border-radius: 10px;
-            }
-            .submit{
-                position:relative;
-                left:350px;
-                background-color: green;
-                color: white;
-                padding: 16px 32px;  
-                border-radius: 7px;
-                cursor: pointer;
-                font-size: 20px;
-            
-            }
-            
-            .python{
-                width:100px;
-                height: 100px;
-                padding-left: 150px;
-                
-            }
-            .c{
-                width:100px;
-                height: 100px;
-                padding-left: 150px;
-            }
-            .html{
-                width:100px;
-                height: 100px;
-                padding-left: 150px;
-            }
-            .css{
-                width:100px;
-                height: 100px;
-                padding-left: 150px;
-            }
-            .javascript{
-                width:100px;
-                height: 100px;
-                padding-left: 150px;
-            }
-            .i1,.i2,.i3,.i4,.i5{
-                display: block;
-                float:left;   
-            }
-            .icons{
-                display:flex;
-                position: relative;
-                top: 260px;
-                float:right;
-                font-size: 36px;
-                
-            }
-            
-            
-            
-    </style>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TradePlanly — personal trading learning plan</title>
+  <style>
+    :root{--bg:#080d16;--panel:#101827;--panel2:#131e30;--line:#26354b;--text:#e8f0fa;--muted:#91a1b8;--cyan:#31d7e7;--blue:#4d8dff;--green:#35d39e;--orange:#ffad4c;--purple:#a78bfa;--red:#ff7184}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 55% -10%,#172b4b 0,#080d16 40%);color:var(--text);font:14px Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}.app{display:flex;min-height:100vh}.sidebar{width:248px;padding:24px 14px;border-right:1px solid var(--line);background:#0a101b;position:fixed;inset:0 auto 0 0;z-index:4}.brand{display:flex;gap:10px;align-items:center;padding:4px 10px 28px;font-weight:800;font-size:20px;letter-spacing:-.5px}.mark{width:29px;height:29px;border-radius:9px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:grid;place-items:center;color:#061321;font-size:18px}.nav-label{color:#5e6e86;font-size:10px;font-weight:800;letter-spacing:.13em;margin:13px 10px 8px}.nav button{border:0;background:transparent;color:#9cadc3;width:100%;padding:10px 12px;border-radius:8px;text-align:left;font:inherit;cursor:pointer;display:flex;gap:11px;align-items:center}.nav button:hover,.nav button.active{background:#17263a;color:#effaff}.nav button.active{box-shadow:inset 2px 0 var(--cyan)}.nav i{font-style:normal;width:18px;text-align:center}.side-foot{position:absolute;bottom:22px;left:18px;right:18px;border:1px solid #233c54;background:#0d1b29;border-radius:12px;padding:12px;color:#b8c8d8;font-size:12px}.side-foot b{display:block;color:var(--cyan);margin-bottom:4px}.main{margin-left:248px;width:calc(100% - 248px);padding:30px;max-width:1600px}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}.eyebrow{color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.topbar h1{font-size:25px;letter-spacing:-.8px;margin:4px 0 0}.date{color:var(--muted);font-size:13px}.card{border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,rgba(20,31,49,.94),rgba(12,19,31,.94));box-shadow:0 12px 30px rgba(0,0,0,.12)}.stat-grid{display:grid;grid-template-columns:repeat(5,minmax(130px,1fr));gap:12px}.stat{padding:17px}.stat span,.mini-label{display:block;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:10px}.stat strong{font-size:25px;display:block;margin-top:8px;letter-spacing:-1px}.stat small{color:#7890ad}.layout{display:grid;grid-template-columns:minmax(420px,1.4fr) minmax(280px,.8fr);gap:18px;margin-top:18px}.section{padding:21px}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.section h2{font-size:17px;margin:3px 0 4px}.section p{color:var(--muted);margin:0}.button{background:var(--cyan);border:0;border-radius:8px;padding:10px 13px;color:#05202a;font:700 12px inherit;cursor:pointer;white-space:nowrap}.button:hover{filter:brightness(1.08)}.button.ghost{background:transparent;color:#beeaf0;border:1px solid #315260}.button.complete{background:#153c38;color:#71e9c3;border:1px solid #237b68}.button:disabled{opacity:.55;cursor:default}.task-list{margin-top:18px;border-top:1px solid var(--line)}.task{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:11px;padding:14px 0;border-bottom:1px solid var(--line)}.check{width:20px;height:20px;border:1px solid #476079;border-radius:6px;background:none;color:#061b16;cursor:pointer}.task.done .check{background:var(--green);border-color:var(--green)}.task.done .task-title{text-decoration:line-through;color:#718197}.task-title{font-weight:700}.task-meta{font-size:12px;color:var(--muted);margin-top:3px}.tag{font-size:10px;padding:4px 7px;border-radius:99px;background:#1a3044;color:#a8dff2;font-weight:800}.progress{height:7px;background:#1a2839;border-radius:99px;overflow:hidden}.progress>span{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:inherit}.sprint{padding:18px;margin-top:18px;background:linear-gradient(110deg,#102c42,#15213c)}.sprint h3{margin:6px 0;font-size:17px}.sprint-info{display:flex;gap:20px;color:#a8bdcf;font-size:12px;margin:14px 0}.right-stack{display:grid;gap:18px}.timer{padding:20px;text-align:center}.ring{width:145px;height:145px;margin:15px auto;border-radius:50%;background:conic-gradient(var(--cyan) var(--ring,0%),#1b2a3c 0);display:grid;place-items:center}.ring>div{width:126px;height:126px;border-radius:50%;background:#101827;display:grid;place-content:center}.timer-value{font-size:28px;font-weight:800}.timer-controls{display:flex;justify-content:center;gap:8px}.streak{padding:20px;background:linear-gradient(135deg,#1d2234,#18243a)}.streak strong{font-size:28px;display:block;margin:8px 0;color:#ffd18a}.upcoming{padding:20px}.upcoming li{color:#b4c3d4;margin:12px 0;padding-left:4px}.page{display:none}.page.active{display:block}.roadmap-head{padding:22px;margin-bottom:16px}.roadmap-head h2{margin:5px 0}.levels{display:grid;gap:12px}.level{padding:17px}.level-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.level h3{margin:0;font-size:15px}.level small{color:var(--muted)}.topic-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.topic{border:1px solid #2a4057;background:#132137;color:#bdd1e3;border-radius:7px;padding:7px 9px;cursor:pointer;font:12px inherit}.topic:hover{border-color:var(--cyan);color:#eaffff}.locked{opacity:.55}.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-card{padding:21px}.form-card h2{margin:0 0 15px;font-size:18px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}label{display:grid;gap:6px;color:#aebed0;font-size:12px}input,select,textarea{background:#0b1422;border:1px solid #2b3d54;border-radius:7px;padding:10px;color:var(--text);font:inherit;width:100%}textarea{min-height:84px;resize:vertical}.full{grid-column:1/-1}.empty{color:#8294a9;border:1px dashed #31465e;border-radius:10px;padding:25px;text-align:center;margin-top:14px}.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{padding:15px}.metric b{font-size:22px;display:block;margin-top:7px}.chart{height:165px;margin-top:18px;border-bottom:1px solid #33445c;background:linear-gradient(180deg,transparent 48%,#243248 49%,transparent 50%),linear-gradient(90deg,transparent 24%,#243248 25%,transparent 26%);position:relative;overflow:hidden}.chart svg{width:100%;height:100%}.notice{padding:11px 13px;background:#17283a;border:1px solid #294966;border-radius:9px;color:#bad5e8;margin:14px 0}.modal{position:fixed;inset:0;background:rgba(3,7,13,.78);display:none;align-items:center;justify-content:center;padding:18px;z-index:9}.modal.open{display:flex}.modal-box{max-height:90vh;overflow:auto;width:min(720px,100%);padding:24px;background:#101a2a;border:1px solid #36506b;border-radius:16px}.close{float:right;background:none;border:0;color:#a9c0d4;font-size:22px;cursor:pointer}.modal-box h2{margin:3px 0 18px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.detail-grid section{border:1px solid #263a51;background:#0d1726;border-radius:10px;padding:14px}.detail-grid h4{color:var(--cyan);font-size:11px;letter-spacing:.1em;margin:0 0 7px}.detail-grid p,.detail-grid li{color:#bdcad9;line-height:1.55}.quiz-option{width:100%;text-align:left;margin:7px 0;padding:10px;border:1px solid #30475f;border-radius:8px;background:#142238;color:#dbe9f3;cursor:pointer}.quiz-option:hover{border-color:var(--cyan)}.quiz-result{margin-top:8px;font-weight:700}.mobile{display:none}@media(max-width:1050px){.stat-grid{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.sidebar{width:208px}.main{margin-left:208px;width:calc(100% - 208px)}}@media(max-width:720px){.sidebar{transform:translateX(-100%);transition:.2s}.sidebar.open{transform:none}.main{margin:0;width:100%;padding:18px}.mobile{display:inline-block;background:transparent;border:1px solid var(--line);color:white;border-radius:7px;padding:7px}.topbar{align-items:flex-start}.stat-grid{grid-template-columns:repeat(2,1fr)}.content-grid,.detail-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.date{display:none}}
+  </style>
 </head>
-<body>
-<div class="nav">
-    <ul>
-        <code><li style="float:right"><a style="color:green;"href="#c1">VBH_G</a></li>
-        <li><a href="#c1" style="color:white;">Home</a></li>
-        <li><a href="#c2" style="color:white;">Education</a></li>
-
-        <li><a href="#c3" style="color:white;">Certificates</a></li>
-        <li><a href="#c4" style="color:white;">Skills </a></li>
-
-        <li><a href="#c5" style="color:white;">Contact</a></li>
-</code>
-    </ul>
-</div>
-
-
-
-    <div class="header" id="c1">
-<img class="img1" src = "https://media.licdn.com/dms/image/D4D03AQGz8V5Hnst6Rw/profile-displayphoto-shrink_800_800/0/1671428126598?e=2147483647&v=beta&t=9jZ-g5L3zLV3OOMUimI3YAzIjBQfEAKep5hoTOiI_rk" style="border-radius: 100%;"></img>
-<code><h1 >G Vybhav</h1>
-    <h2 class="h2">Student</h2><br>
-    <h2 class="h3">BCA-Bachelor of Computer Applications</h><br>
-    <h2 class="h4">Gitam Deemed To Be University</h2>
-</code></div>
-<div class="download"><code><a href="C:\Users\pc new\Desktop\webex_demo\index.html" download="Download" style="font-size:20px">Download</a></code></div>
-<div class="body" id="c2">
-
-<code><h1 >Education</h1></code>
-</div >
-<div class="data1" id="c2">
-<code>
-<table >
-    <tr>
-        <th>Schooling</th>
-        <th>Institute Name</th>
-    </tr>
-    <tr>
-        <td>1-8</td>
-        <td><a class="a"href="#">Aditya Educational Institutes</a></td>
-    </tr>
-    <tr>
-        <td>9-10</td>
-        <td><a class="a"href="#">Sasi Educational Institutes</a></td>
-    </tr>
-</table>
-</code></div>
-<div class="data2">
-    <code>
-    <table>
-        <tr>
-            <th>Class</th>
-            <th>Institute Name</th>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td><a class="a"href="#">Sasi Educational Institutes</a></td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td><a class="a"href="#">Sasi Educational Institutes</a></td>
-        </tr>
-    </table>
-    </code></div>
-    <div class="data3">
-        <code>
-        <table>
-            <tr>
-                <th>Degree</th>
-                <th>Institute Name</th>
-            </tr>
-            <tr>
-                <td>BCA(Bachelor of Computer Applications)</td>
-                <td><a class="a"href="#">Gitam Deemed to be University</a></td>
-            </tr>
-            
-        </table>
-        </code></div>
-
-<div class="body2" id="c3">
-    <code><h1>Certificates</h1></code>
-    </div>
-    <div class="body3">
-            <img id ="c3" src="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/2285878/original/Guttula_Vybhav20230308-151-1s20xmz.jpg" class="img2">
-<img src="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/2285593/original/Guttula_Vybhav20230308-63-7gyuw2.jpg" class="img3">
-
-</div>
-    </div >
-</div>
-<div class="skill" id="c4">
-   <code> <h1 >Skills</h1>
-</code>
-</div>
-<div class="skillimg" id="c4">
-    <code>
-        <div class="i1"><img class="python" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png">
-        <figcaption style="padding-left: 170px;">python</figcaption></div>
-       <div class="i2"> 
-        <img class="c" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png">
-        <figcaption style="padding-left: 185px;">C++</figcaption></div>
-        <div class="i3">
-        <img class="html" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png">
-        <figcaption style="padding-left: 175px;">Html</figcaption></div>
-        <div class="i4">
-        <img class="css" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">
-        <figcaption style="padding-left: 185px;">CSS</figcaption></div>
-        <div class="i5">
-        <img class="javascript" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png">
-        <figcaption style="padding-left: 150px;">JavaScript</figcaption></div>
-    </ul>
-    </code>
-</div>
-<div class="contact" id="c5">
-    <code ><h1 >Contact me</h1></code>
-</div>
-<div class="cont" id="c5">
-    <form>
-        <input type="text" placeholder="Enter your name" size="50" maxlength="20" style="padding: 10px; border-radius: 7px; ">
-        <input type="email" placeholder="Enter your email" size="50" style="padding: 10px; border-radius: 7px;" ><br><br>
-        <textarea placeholder="Enter your message" cols="105" rows="10" style="padding: 10px; border-radius: 7px;" ></textarea><br><br>
-        <input class="submit" type="submit" value="Submit" >
-
-
-    </form>
-</div>
-
-<div class="icons">
-    <a class="insta"href="https://www.instagram.com/vybhav_g/" target="_blank"><i class="fa fa-instagram" style="color:white; padding-right:10px;"></i>
-    </a>
-    <a class="twitter"href="https://twitter.com/GuttulaVybhav" target="_blank"  ><i class="fa fa-twitter" style="color:white; padding-right: 10px;"></i></a>
-    <a class="linkedin"href="https://in.linkedin.com/in/g-vybhav-8a2b81259?trk=people-guest_people_search-card" target="_blank"><i class="fa fa-linkedin" style=" color:white; padding-right: 10px;"></i></a>
-    <a class="facebook"href="https://m.facebook.com/people/Guttula-Vybhav/100088080496759/" target="_blank"><i class="fa fa-facebook" style=" color:white; padding-right: 10px;"></i>
-</a>
-</div>
-</body>
-</html>
+<body><div class="app">
+<aside class="sidebar" id="sidebar"><div class="brand"><span class="mark">↗</span> TradePlanly</div><nav class="nav" id="nav"><div class="nav-label">LEARNING SPACE</div></nav><div class="side-foot"><b>Education only</b>No signals or financial advice. Learn, test, and practise with care.</div></aside>
+<main class="main"><header class="topbar"><div><button class="mobile" onclick="sidebarEl.classList.toggle('open')">☰</button><div class="eyebrow">Personal learning workspace</div><h1 id="pageTitle">Vybhav's Trading Plan</h1></div><div class="date">Wednesday, September 24, 2026</div></header>
+<section id="dashboard" class="page active"></section><section id="today" class="page"></section><section id="roadmap" class="page"></section><section id="sprints" class="page"></section><section id="resources" class="page"></section><section id="practice" class="page"></section><section id="strategy" class="page"></section><section id="backtesting" class="page"></section><section id="journal" class="page"></section><section id="quizzes" class="page"></section><section id="notes" class="page"></section><section id="analytics" class="page"></section><section id="settings" class="page"></section></main></div>
+<div class="modal" id="modal"><div class="modal-box" id="modalContent"></div></div>
+<script>
+const roadmap=[
+['Trading Foundations',['What is Trading?','Trading vs Investing','Financial Markets','Stocks','Crypto','Forex','Commodities','Indices','Brokers and Exchanges','Bid and Ask','Spread','Liquidity','Volatility','Market Orders','Limit Orders','Stop Orders','Stop Loss','Take Profit','Slippage','Trading Fees']],
+['Candlesticks & Charts',['OHLC','Candle Body','Wicks','Bullish Candles','Bearish Candles','Doji','Hammer','Inverted Hammer','Shooting Star','Engulfing','Pin Bar','Inside Bar','Timeframes','1-minute chart','5-minute chart','15-minute chart','1-hour chart','4-hour chart','Daily chart']],
+['Market Structure',['Higher High','Higher Low','Lower High','Lower Low','Uptrend','Downtrend','Range','Break of Structure','Change of Character','Market Structure Shift','Internal Structure','External Structure']],
+['Support, Resistance & Price Action',['Horizontal Support','Horizontal Resistance','Previous Highs','Previous Lows','Psychological Levels','Role Reversal','Trendlines','Channels','Pullbacks','Breakouts','Retests','False Breakouts','Price Rejection','Consolidation']],
+['Volume',['Volume Basics','Average Volume','Volume Spikes','Volume Expansion','Volume Contraction','Breakout Volume','Volume Confirmation','Volume Divergence','VWAP','Volume Profile','Point of Control','Value Area']],
+['Chart Patterns',['Double Top','Double Bottom','Head and Shoulders','Inverse Head and Shoulders','Triangle','Ascending Triangle','Descending Triangle','Symmetrical Triangle','Rectangle','Bull Flag','Bear Flag','Pennant','Rising Wedge','Falling Wedge']],
+['Technical Indicators',['Moving Averages','SMA','EMA','20 EMA','50 EMA','200 EMA','RSI','RSI Divergence','MACD','Bollinger Bands','ATR','ADX','Stochastic','VWAP']],
+['Advanced Price Action',['Liquidity','Buy-side Liquidity','Sell-side Liquidity','Equal Highs','Equal Lows','Liquidity Sweep','Stop Hunt Concept','Displacement','Imbalance','Fair Value Gap','Supply Zones','Demand Zones','Order Blocks','Premium','Discount']],
+['Trading Strategies',['Trend Following','Breakout Trading','Breakout + Retest','Pullback Trading','Support/Resistance Trading','Range Trading','Momentum Trading','Mean Reversion','Scalping','Day Trading','Short Swing Trading']],
+['Risk Management',['Risk Per Trade','Position Sizing','Stop Loss','Take Profit','Risk/Reward','1R','2R','3R','Maximum Daily Loss','Maximum Weekly Loss','Drawdown','Risk of Ruin','Leverage Risk']],
+['Trade Management',['Entry Rules','Stop Placement','Target Placement','Partial Profit','Break Even','Trailing Stop','Scaling In','Scaling Out','Exit Rules']],
+['Trading Psychology',['FOMO','Fear','Greed','Revenge Trading','Overtrading','Hesitation','Overconfidence','Loss Acceptance','Discipline','Patience','Emotional Control']],
+['Backtesting',['What is Backtesting?','Historical Testing','Manual Backtesting','Strategy Rules','Sample Size','Win Rate','Average Win','Average Loss','Expectancy','Profit Factor','Maximum Drawdown','Consecutive Losses','Strategy Optimization','Avoiding Overfitting']],
+['Paper Trading',['Demo Trading','Forward Testing','Execution Practice','Trade Journal','Mistake Tracking','Rule Following']],
+['Trading Journal',['Entry','Exit','Stop Loss','Target','Position Size','Setup','Timeframe','Market Conditions','Screenshot','Reason for Entry','Reason for Exit','Emotion','Mistake','Result in R']],
+['Trading Statistics',['Win Rate','Risk/Reward','Expectancy','Average R','Profit Factor','Maximum Drawdown','Recovery Factor','Losing Streak','Winning Streak','Standard Deviation','Probability','Risk of Ruin']],
+['Market Sessions & Macro',['Asian Session','London Session','New York Session','Session Overlap','Market Volatility','Economic Calendar','Interest Rates','Inflation','CPI','Employment Data','GDP','Central Banks','Bond Yields','Dollar Index']],
+['Crypto Trading',['Spot Trading','Crypto Exchanges','Wallets','On-chain Basics','Market Cap','Fully Diluted Valuation','Liquidity Pools','DEX','CEX','Funding Rate','Open Interest','Liquidations','Bitcoin Dominance','Stablecoins','Token Unlocks','Rug Pulls','Honeypots','Scam Detection']],
+['Futures',['Futures','Perpetual Futures','Margin','Leverage','Liquidation','Funding','Open Interest','Basis','Futures Risk Management']],
+['Options',['Calls','Puts','Strike Price','Premium','Expiration','Intrinsic Value','Extrinsic Value','Delta','Gamma','Theta','Vega','Implied Volatility','IV Crush','Basic Options Strategies']],
+['Quantitative Trading',['Trading with Python','NumPy','Pandas','Data Collection','Historical Data','Strategy Coding','Backtesting','Performance Analysis','APIs','Automated Trading','Algorithmic Execution']],
+['Advanced Trading',['Momentum Strategies','Mean Reversion Strategies','Statistical Arbitrage','Pairs Trading','Volatility Trading','Portfolio Management','Correlation','Diversification','Portfolio Risk','Monte Carlo Simulation','Advanced Risk Management','Strategy Research']]];
+const learningLevels=['Absolute Beginner','Chart Reader','Price Action Trader','Strategy Builder','Risk-Controlled Trader','Backtesting Trader','Consistent Paper Trader','Advanced Trader','Quant / Professional Concepts'];
+const sprintData=[['Trading Foundations','7 days'],['Candlesticks + Charts + Structure','10 days'],['Price Action + Volume','10 days'],['Indicators + Patterns + Liquidity','14 days'],['Strategy Building + Risk','14 days'],['Backtesting + Psychology + Journal','14 days'],['Crypto / Futures + Advanced','21 days'],['Quant + Strategy Research + Mastery','30+ days']];
+const planDays=[['What is Trading?','Trading vs Investing','Financial Markets','Stocks vs Crypto vs Forex','Basic Market Participants','Basic Trading Vocabulary','10-question quiz'],['What is an Exchange?','Broker vs Exchange','Bid and Ask','Spread','Liquidity','Volatility','Quiz'],['Market Order','Limit Order','Stop Order','Stop Loss','Take Profit','Slippage','Quiz'],['Trading Timeframes','Scalping','Day Trading','Swing Trading','Position Trading','Choosing a timeframe','Quiz'],['Trading Charts','OHLC','Candlesticks','Candle Body','Wicks','Bullish/Bearish candles','Quiz'],['Doji','Hammer','Shooting Star','Engulfing','Pin Bar','Inside Bar','Quiz'],['Revision Day — Days 1–6','25-question sprint test']];
+const defaults={completed:{},notes:{},resources:[],strategies:[],journal:[],backtests:[],studyMins:0,day:0,settings:{minutes:120,market:'Crypto',goal:'Learn Trading'},timer:{task:null,seconds:0,running:false}};
+let state=JSON.parse(localStorage.getItem('tradeplanly-v1')||'null')||structuredClone(defaults), interval; const $=id=>document.getElementById(id), navEl=$('nav'), dashboardEl=$('dashboard'), todayEl=$('today'), roadmapEl=$('roadmap'), sidebarEl=$('sidebar'), modalEl=$('modal'), modalContentEl=$('modalContent'), pageTitleEl=$('pageTitle'); const save=()=>localStorage.setItem('tradeplanly-v1',JSON.stringify(state));
+const allTopics=roadmap.flatMap((l,i)=>l[1].map((name,j)=>({name,group:i,id:`${i}-${j}`}))); const total=allTopics.length; const completeCount=()=>Object.keys(state.completed).length; const pct=()=>Math.round(completeCount()/total*100); const currentTasks=()=>planDays[Math.min(state.day,planDays.length-1)]; const dayDone=()=>currentTasks().filter(t=>state.completed['task-'+state.day+'-'+t]).length; const minsFor=t=>t.toLowerCase().includes('quiz')?10:t.includes('Review')?15:20;
+function renderNav(){const items=[['dashboard','▦','Dashboard'],['roadmap','◎','Roadmap'],['today','✓',"Today's Tasks"],['sprints','◫','Sprints'],['resources','⌁','Resources'],['practice','◌','Practice'],['strategy','⌘','Strategy Lab'],['backtesting','⌁','Backtesting'],['journal','▤','Trading Journal'],['quizzes','?','Quizzes'],['notes','✎','Notes'],['analytics','⌁','Progress Analytics'],['settings','⚙','Settings']];navEl.innerHTML='<div class="nav-label">LEARNING SPACE</div>'+items.map(([id,icon,label])=>`<button class="${id==='dashboard'?'active':''}" data-page="${id}"><i>${icon}</i>${label}</button>`).join('');navEl.querySelectorAll('button').forEach(b=>b.onclick=()=>show(b.dataset.page));}
+function stat(label,value,sub=''){return `<article class="card stat"><span>${label}</span><strong>${value}</strong><small>${sub}</small></article>`}function progress(v){return `<div class="progress"><span style="width:${v}%"></span></div>`}
+function renderDashboard(){let done=dayDone(), tasks=currentTasks(), totalM=tasks.reduce((a,t)=>a+minsFor(t),0);dashboardEl.innerHTML=`<div class="stat-grid">${stat('Trading level',learningLevels[Math.min(8,Math.floor(pct()/12))],'Learning path')} ${stat('Overall progress',pct()+'%','of 288 concepts')} ${stat('Topics',completeCount()+' / '+total,'completed')} ${stat('Learning time',Math.floor(state.studyMins/60)+'h '+state.studyMins%60+'m','tracked focus time')} ${stat('Completion estimate','Apr 2027','at 2h / day')}</div><div class="layout"><div><section class="card section"><div class="section-head"><div><div class="eyebrow">Today’s goal</div><h2>Day ${state.day+1} — ${state.day===0?'Trading Foundations':state.day===6?'Sprint 1 review':'Build your foundation'}</h2><p>${done} of ${tasks.length} tasks complete · ~${totalM} minutes planned</p></div><button class="button" onclick="show('today')">Start learning →</button></div><div class="task-list">${tasks.slice(0,4).map((t,i)=>taskHTML(t,i)).join('')}</div></section><section class="card sprint"><div class="eyebrow">Current sprint</div><h3>Sprint 1 — Trading Foundations</h3><p>Build a common language before practising any setup.</p><div class="sprint-info"><span>◷ 7-day sprint</span><span>▣ ${done}/${tasks.length} today</span><span>🔒 Sprint 2 after review</span></div>${progress((state.day/7)*100)}</section><section class="card section" style="margin-top:18px"><div class="section-head"><div><div class="eyebrow">Learning progress</div><h2>Roadmap, one concept at a time</h2></div><button class="button ghost" onclick="show('roadmap')">View roadmap</button></div><div style="margin-top:18px">${progress(pct())}<div class="task-meta" style="margin-top:8px">${completeCount()} topics mastered · Keep the pace sustainable.</div></div></section></div><aside class="right-stack"><section class="card timer" id="timerCard"></section><section class="card streak"><div class="eyebrow">Consistency</div><strong>🔥 ${completeCount()?1:0} day streak</strong><p>Small, deliberate sessions build dependable habits.</p></section><section class="card upcoming"><div class="eyebrow">Up next</div><ul><li>Day ${Math.min(7,state.day+2)} — ${planDays[Math.min(6,state.day+1)][0]}</li><li>Revision test unlocks Sprint 2</li><li>Mark confidence after each topic</li></ul></section></aside></div>`;renderTimer()}
+function taskHTML(t,i){let key='task-'+state.day+'-'+t,done=state.completed[key];return `<div class="task ${done?'done':''}"><button class="check" onclick="toggleTask('${esc(t)}')">${done?'✓':''}</button><div onclick="openTopic('${esc(t)}')" style="cursor:pointer"><div class="task-title">${t}</div><div class="task-meta">${minsFor(t)} min · ${t.toLowerCase().includes('quiz')?'Quiz':'Beginner'} · Open lesson</div></div><span class="tag">${done?'DONE':i===0?'NEXT':'LEARN'}</span></div>`}
+function todayPage(){let tasks=currentTasks(),done=dayDone();todayEl.innerHTML=`<section class="card section"><div class="section-head"><div><div class="eyebrow">Today</div><h2>Day ${state.day+1} — ${state.day===0?'Trading Foundations':'Learning Sprint'}</h2><p>${done} / ${tasks.length} tasks complete · ${tasks.reduce((a,t)=>a+minsFor(t),0)} minutes set aside</p></div><button class="button" onclick="startNext()">Start next task</button></div><div class="notice">Educational workspace: explore concepts, document your rules, and test hypotheses. It does not provide trade signals or advice.</div><div class="task-list">${tasks.map((t,i)=>taskHTML(t,i)).join('')}</div>${done===tasks.length?`<div style="margin-top:18px"><button class="button complete" onclick="advanceDay()">Complete day ${state.day+1} →</button></div>`:''}</section>`}
+function roadmapPage(){roadmapEl.innerHTML=`<section class="card roadmap-head"><div class="eyebrow">Long-term visibility</div><h2>Trading learning roadmap</h2><p>288 concepts organized for progressive learning. Complete topics and quizzes to unlock each stage.</p></section><div class="levels">${roadmap.map((x,i)=>{let topics=x[1].map((name,j)=>({name,id:`${i}-${j}`})),d=topics.filter(t=>state.completed[t.id]).length, unlocked=i===0||roadmap.slice(0,i).flatMap(x=>x[1]).every((_,zi)=>true);return `<article class="card level ${i>0&&!unlocked?'locked':''}"><div class="level-top"><div><div class="eyebrow">Level ${i+1} · ${learningLevels[Math.min(8,Math.floor(i/2.45))]}</div><h3>${x[0]}</h3></div><small>${d}/${topics.length} topics</small></div><div style="margin-top:12px">${progress(d/topics.length*100)}</div><div class="topic-chips">${topics.map(t=>`<button class="topic" onclick="openTopic('${esc(t.name)}','${t.id}')">${t.name}</button>`).join('')}</div></article>`}).join('')}</div>`}
+function genericPages(){sprints.innerHTML=`<div class="levels">${sprintData.map((s,i)=>`<article class="card level"><div class="level-top"><div><div class="eyebrow">Sprint ${i+1}</div><h3>${s[0]}</h3></div><span class="tag">${i===0?'CURRENT':i===1?'LOCKED':'UPCOMING'}</span></div><p style="margin:9px 0;color:var(--muted)">Estimated ${s[1]} · Structured concepts, practice, review, and a quiz checkpoint.</p>${progress(i===0?(state.day/7*100):0)}</article>`).join('')}</div>`;
+resources.innerHTML=`<div class="content-grid"><section class="card form-card"><h2>Resource library</h2><p style="color:var(--muted)">Add your own trusted educational resources. URLs are intentionally blank.</p><form onsubmit="addResource(event)" class="form-grid" style="margin-top:16px"><label>Title<input name="title" required placeholder="e.g. Candlestick overview"></label><label>Type<select name="type"><option>Article</option><option>YouTube</option><option>Documentation</option><option>Interactive simulator</option><option>Practice</option></select></label><label>Topic<input name="topic" placeholder="Topic name"></label><label>Duration<input name="duration" placeholder="25 min"></label><label class="full">URL (optional)<input name="url" type="url" placeholder="Paste a URL you trust"></label><button class="button">+ Add resource</button></form></section><section class="card form-card"><h2>Saved resources</h2>${state.resources.length?state.resources.map(r=>`<div class="notice"><b>${r.title}</b><br>${r.type} · ${r.topic||'Unassigned'} · ${r.duration||'Flexible'} ${r.url?`<br><a href="${r.url}" target="_blank">Open resource ↗</a>`:''}</div>`).join(''):'<div class="empty">No resources yet. Add a source you want to use.</div>'}</section></div>`;
+practice.innerHTML=`<section class="card form-card"><div class="eyebrow">Deliberate practice</div><h2>Practice checklist</h2><div class="notice">Use paper charts or a simulator. Observe and annotate; do not treat practice as a prediction tool.</div>${['Mark a clear range and its boundaries','Identify two examples of a higher high / higher low','Write a hypothesis for a breakout + retest','Review risk before documenting a setup'].map((x,i)=>`<div class="task"><button class="check" onclick="this.innerHTML=this.innerHTML?'':'✓';this.style.background=this.innerHTML?'var(--green)':''"></button><div class="task-title">${x}</div><span class="tag">PRACTICE</span></div>`).join('')}</section>`;
+strategy.innerHTML=formPage('Strategy Lab','Create a written, testable plan. A strategy is a hypothesis to test—not a signal or promise.',['Strategy name','Market','Timeframe','Trading style','Entry conditions','Confirmation','Stop loss rules','Take profit rules','Risk per trade','No-trade conditions'],'strategies');
+journal.innerHTML=formPage('Trading Journal','Journal one observation at a time — this is a learning record, not a recommendation.',['Date','Asset','Market','Direction','Setup','Timeframe','Entry','Stop Loss','Take Profit','Position Size','Risk %','Result in R','Emotion','Mistake','Reason for entry','Reason for exit','Screenshot URL','Notes'],'journal');
+backtesting.innerHTML=`<div class="content-grid"><section>${formPage('Backtesting tracker','Test rules against historical examples; results never guarantee future outcomes.',['Strategy','Market','Timeframe','Entry rules','Exit rules','Stop rules','Target rules','Result (R)','Notes'],'backtests')}</section><section class="card form-card"><h2>Backtest metrics</h2>${backtestMetrics()}<div class="chart"><svg viewBox="0 0 500 165" preserveAspectRatio="none"><polyline points="0,142 70,130 135,139 205,94 275,105 350,61 425,77 500,25" fill="none" stroke="#31d7e7" stroke-width="3"/></svg></div><p style="color:var(--muted);font-size:12px">Illustrative cumulative R preview. Add results to calculate your own evidence.</p></section></div>`;
+quizzes.innerHTML=`<section class="card form-card"><div class="eyebrow">Knowledge checks</div><h2>Breakout & retest mini quiz</h2><p>Price moves above resistance with high activity, then returns to test the prior resistance. Which concept best describes this?</p>${['Random movement','Breakout + retest','Mean reversion','Gap trading'].map((x,i)=>`<button class="quiz-option" onclick="quizAnswer(${i})">${'ABCD'[i]}. ${x}</button>`).join('')}<div id="quizResult" class="quiz-result"></div></section>`;
+notes.innerHTML=`<section class="card form-card"><div class="eyebrow">Personal notes</div><h2>Learning notebook</h2><p style="color:var(--muted)">Markdown-friendly text autosaves locally as you type.</p><label style="margin-top:14px">Topic<select id="noteTopic" onchange="loadNote()">${allTopics.slice(0,50).map(t=>`<option>${t.name}</option>`).join('')}</select></label><textarea id="noteText" oninput="saveNote()" placeholder="# Notes\n- Capture what you understood\n- Add questions to revisit"></textarea><small style="color:var(--green);margin-top:8px;display:block">Autosaves to this browser.</small></section>`;setTimeout(loadNote,0);
+analytics.innerHTML=`<div class="metric-grid">${[['Weekly time',state.studyMins+' min'],['Topics completed',completeCount()],['Quiz average','—'],['Journaled trades',state.journal.length],['Backtest expectancy',calcExpectancy()+'R'],['Current streak',completeCount()?1:0+' days']].map(m=>`<article class="card metric"><span class="mini-label">${m[0]}</span><b>${m[1]}</b></article>`).join('')}</div><section class="card form-card" style="margin-top:18px"><h2>Learning progress</h2><div class="chart"><svg viewBox="0 0 500 165" preserveAspectRatio="none"><polyline points="0,150 90,145 170,142 250,130 330,110 420,85 500,55" fill="none" stroke="#4d8dff" stroke-width="3"/></svg></div><div class="notice">Progress is based on topics you mark complete. Keep performance claims grounded in documented samples.</div></section>`;
+settings.innerHTML=`<section class="card form-card" style="max-width:670px"><div class="eyebrow">Your plan</div><h2>Learning settings</h2><form class="form-grid" onsubmit="saveSettings(event)"><label>Daily study time<select name="minutes">${[30,60,90,120].map(n=>`<option value="${n}" ${state.settings.minutes==n?'selected':''}>${n} minutes</option>`).join('')}<option value="custom">Custom</option></select></label><label>Primary market<select name="market">${['Crypto','Stocks','Forex','Futures','Options'].map(x=>`<option ${state.settings.market===x?'selected':''}>${x}</option>`).join('')}</select></label><label class="full">Primary goal<select name="goal">${['Learn Trading','Build Strategy','Backtest','Paper Trade','Become Consistent'].map(x=>`<option ${state.settings.goal===x?'selected':''}>${x}</option>`).join('')}</select></label><div class="notice full">Initial plan: short-term trading education · Day trading + short swing trading · Start date Sep 24, 2026.</div><button class="button">Save settings</button></form></section>`}
+function formPage(title,desc,fields,collection){return `<section class="card form-card"><div class="eyebrow">Personal record</div><h2>${title}</h2><p style="color:var(--muted)">${desc}</p><form onsubmit="saveEntry(event,'${collection}')" class="form-grid" style="margin-top:16px">${fields.map(f=>`<label class="${f==='Notes'||f.includes('rules')||f.includes('Reason')?'full':''}">${f}${f==='Notes'||f.includes('rules')||f.includes('Reason')?`<textarea name="${f}" placeholder="Optional notes"></textarea>`:`<input name="${f}" placeholder="${f}">`}</label>`).join('')}<button class="button">Save entry</button></form></section>`}
+function backtestMetrics(){let a=state.backtests.map(x=>parseFloat(x['Result (R)'])).filter(Number.isFinite),wins=a.filter(x=>x>0),loss=a.filter(x=>x<0),win= a.length?Math.round(wins.length/a.length*100):0,avgW=wins.length?(wins.reduce((x,y)=>x+y,0)/wins.length).toFixed(2):'0',avgL=loss.length?(loss.reduce((x,y)=>x+y,0)/loss.length).toFixed(2):'0';return `<div class="metric-grid">${[['Total trades',a.length],['Win rate',win+'%'],['Average win',avgW+'R'],['Average loss',avgL+'R'],['Expectancy',calcExpectancy()+'R'],['Total R',a.reduce((x,y)=>x+y,0).toFixed(2)]].map(x=>`<div class="card metric"><span class="mini-label">${x[0]}</span><b>${x[1]}</b></div>`).join('')}</div>`}function calcExpectancy(){let a=state.backtests.map(x=>parseFloat(x['Result (R)'])).filter(Number.isFinite);return a.length?(a.reduce((x,y)=>x+y,0)/a.length).toFixed(2):'0.00'}
+function renderTimer(){let el=document.getElementById('timerCard');if(!el)return;let s=state.timer.seconds,m=Math.floor(s/60),ss=String(s%60).padStart(2,'0');el.innerHTML=`<div class="eyebrow">Focus timer</div><div class="ring" style="--ring:${Math.min(100,s/1200*100)}%"><div><span class="timer-value">${m}:${ss}</span><small>${state.timer.task||'Ready to learn'}</small></div></div><div class="timer-controls"><button class="button" onclick="timerToggle()">${state.timer.running?'Pause':'Start'}</button><button class="button ghost" onclick="stopTimer()">Stop</button></div>`}
+function timerToggle(){state.timer.running=!state.timer.running;save();if(state.timer.running&&!interval)interval=setInterval(()=>{state.timer.seconds++;renderTimer();save()},1000);if(!state.timer.running){clearInterval(interval);interval=null}renderTimer()}function stopTimer(){state.studyMins+=Math.floor(state.timer.seconds/60);state.timer={task:null,seconds:0,running:false};clearInterval(interval);interval=null;save();renderDashboard();todayPage()}
+function startNext(){let t=currentTasks().find(t=>!state.completed['task-'+state.day+'-'+t]);if(t){state.timer.task=t;state.timer.running=false;save();show('today');openTopic(t)}else advanceDay()}function toggleTask(t){let key='task-'+state.day+'-'+t;if(state.completed[key])delete state.completed[key];else {state.completed[key]=true;let topic=allTopics.find(x=>x.name.toLowerCase()===t.toLowerCase());if(topic)state.completed[topic.id]=true}save();renderDashboard();todayPage();roadmapPage()}function advanceDay(){if(state.day<planDays.length-1){state.day++;save();show('today')}else alert('Sprint 1 review complete. Complete the revision test to unlock Sprint 2.')}
+function openTopic(name,id){let base=name.replace('Stocks vs Crypto vs Forex','Financial Markets');let topic=allTopics.find(t=>t.id===id||t.name.toLowerCase()===base.toLowerCase());let key=topic?.id;modalContentEl.innerHTML=`<button class="close" onclick="closeModal()">×</button><div class="eyebrow">Topic lesson</div><h2>${name}</h2><div class="detail-grid"><section><h4>LEARNING OBJECTIVE</h4><p>Build a clear, educational understanding of ${name} and how it fits into a disciplined short-term trading process.</p></section><section><h4>WHAT TO UNDERSTAND</h4><p>Definitions, context, limitations, and how to document observations before making any practice decision.</p></section><section><h4>KEY CONCEPTS</h4><ul><li>Context before action</li><li>Risk and uncertainty</li><li>Evidence from testing</li><li>Clear written rules</li></ul></section><section><h4>COMMON MISTAKES</h4><ul><li>Treating a concept as a guaranteed outcome</li><li>Skipping review and risk planning</li><li>Using too little sample data</li></ul></section><section><h4>PRACTICE EXERCISE</h4><p>Find two historical examples, annotate what you see, and write one question for review.</p></section><section><h4>RESOURCES & NOTES</h4><p>Add your own sources in Resources. Capture key takeaways in Notes.</p></section></div><div class="notice">This lesson is educational only — not a buy/sell signal or personalised financial advice.</div><div style="display:flex;gap:9px"><button class="button" onclick="state.timer.task='${esc(name)}';save();closeModal();show('dashboard');timerToggle()">Start timer</button><button class="button ${key&&state.completed[key]?'complete':'ghost'}" onclick="completeTopic('${key||''}')">${key&&state.completed[key]?'Completed ✓':'Mark complete'}</button></div>`;modalEl.classList.add('open')}
+function completeTopic(id){if(id)state.completed[id]=true;save();closeModal();renderDashboard();roadmapPage()}function closeModal(){modalEl.classList.remove('open')}function esc(s){return String(s).replaceAll("'","\\'")}function quizAnswer(i){let e=document.getElementById('quizResult');e.textContent=i===1?'Correct — that is a breakout + retest.':'Not quite. Review the breakout + retest concept and try again.';e.style.color=i===1?'var(--green)':'var(--orange)'}function addResource(e){e.preventDefault();state.resources.push(Object.fromEntries(new FormData(e.target)));save();genericPages()}function saveEntry(e,c){e.preventDefault();state[c].push(Object.fromEntries(new FormData(e.target)));save();alert('Saved locally.');genericPages()}function saveNote(){state.notes[noteTopic.value]=noteText.value;save()}function loadNote(){if(noteText)noteText.value=state.notes[noteTopic.value]||''}function saveSettings(e){e.preventDefault();let f=new FormData(e.target);state.settings={minutes:f.get('minutes'),market:f.get('market'),goal:f.get('goal')};save();alert('Settings saved locally.');renderDashboard()}
+function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));pageTitleEl.textContent=id==='dashboard'?"Vybhav's Trading Plan":document.querySelector(`[data-page="${id}"]`).textContent.trim();sidebarEl.classList.remove('open');({dashboard:renderDashboard,today:todayPage,roadmap:roadmapPage,sprints:genericPages,resources:genericPages,practice:genericPages,strategy:genericPages,backtesting:genericPages,journal:genericPages,quizzes:genericPages,notes:genericPages,analytics:genericPages,settings:genericPages})[id]();window.scrollTo(0,0)}
+renderNav();renderDashboard();genericPages();
+</script></body></html>
